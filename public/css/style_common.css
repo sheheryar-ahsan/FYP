@@ -1,0 +1,60 @@
+.view {
+   width: inherit;
+   height: 250px;
+   border: 5px solid rgb(1, 178, 248);
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
+   cursor: default;
+}
+.view:hover
+{
+   box-shadow: 8px 8px 8px rgba(0, 172, 240, 0.616) ;
+}
+.view .mask{
+   width: inherit;
+   height: inherit;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   width: inherit;
+   height: inherit;
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 17px;
+   padding: 10px;
+   background: rgba(0, 0, 255, 0.842);
+   margin: 20px 0 0 0;
+}
+.view p {
+   font-family: Georgia, serif;
+   font-style: italic;
+   font-size: 15px;
+   position: relative;
+   color: white;
+   padding: 10px 20px 20px;
+   text-align: center;
+}
+.view a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 7px 14px;
+   background: rgba(0, 0, 255, 0.87);
+   color: #fff;
+   text-transform: uppercase;
+   box-shadow: 0 0 15px #000;
+}
+.view a.info:hover {
+   box-shadow: 0 0 15px rgba(0, 0, 255, 0.87);
+}
+	

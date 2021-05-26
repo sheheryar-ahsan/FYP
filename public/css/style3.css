@@ -1,0 +1,48 @@
+.view-third .mask {
+   top: -200px;
+   opacity: 0;
+   transition: all 0.3s ease-out 0.5s;
+}
+.view-third:hover img
+{
+    filter: grayscale(100%);
+}
+.view-third h2 {
+   transform: translateY(-200px);
+   transition: all 0.2s ease-in-out 0.1s;
+}
+.view-third p {
+   color: white;
+   transform: translateY(-200px);
+   transition: all 0.2s ease-in-out 0.2s;
+}
+.view-third a.info {
+   transform: translateY(-200px);
+   transition: all 0.2s ease-in-out 0.3s;
+}
+.view-third:hover .mask {
+   opacity: 1;
+   top: 0px;
+   transition-delay: 0s;
+   animation: bounceY 0.9s linear;
+}
+.view-third:hover h2 {
+   transform: translateY(0px);
+   transition-delay: 0.4s;
+}
+.view-third:hover p {
+   transform: translateY(0px);
+   transition-delay: 0.2s;
+}
+.view-third:hover a.info {
+   transform: translateY(0px);
+   transition-delay: 0s;
+}
+@keyframes bounceY {
+    0% { transform: translateY(-205px);}
+    40% { transform: translateY(-100px);}
+    65% { transform: translateY(-52px);}
+    82% { transform: translateY(-25px);}
+    92% { transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}
+}
